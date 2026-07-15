@@ -20,3 +20,21 @@ function givequote() {
     document.getElementById("quote").innerText =
         quotes[randomIndex];
 }
+
+function givequote() {
+    let randomIndex = Math.floor(Math.random() * quotes.length);
+
+    document.getElementById("quote").innerText =
+        quotes[randomIndex];
+}
+
+const sound = new Audio("funny.mp3");
+
+function givequote() {
+    let randomIndex = Math.floor(Math.random() * quotes.length);
+
+    document.getElementById("quote").innerText =
+        quotes[randomIndex];
+
+    sound.play();
+}
